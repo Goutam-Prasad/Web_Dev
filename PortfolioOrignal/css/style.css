@@ -1,0 +1,275 @@
+/* css Variables linking*/
+@import url(./Stylesheets/variable.css);
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  letter-spacing:1px ;
+}
+
+/*-----------------------Navbar Styling-------------------------------------------------*/
+
+.topnavbar .navbar-brand{
+    padding: 0 2rem 0 0rem;
+}
+
+.topnavbar .navbar{
+    padding: 1em 10em;
+}  
+
+#navbarNavAltMarkup .nav-link{
+    font-weight: 500;
+    padding: 0.2em 2em 0em 2em;
+    text-transform: uppercase;
+    color: var(--navColor);
+    transition:all 0.3s ease;
+
+}
+#navbarNavAltMarkup .nav-link:hover{
+    color:var(--navHoverColor);
+    box-sizing: border-box;
+    padding: 0.2rem 2rem 0rem 2rem;
+    background-color:#f07167;
+    text-decoration: underline;
+    border-radius: 16px;
+}
+
+/*----------------------------Intro area designing------------------------------*/
+.site-main .intro-banner{
+    padding: 0 0 2rem 0;
+}
+
+.intro-banner .site-title .details{
+    padding-left: 1rem;
+}
+.intro-banner .site-title h3{
+    padding-top: 25%;
+    font-weight: 500;
+}
+
+.intro-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 14vw;
+    background-color:var(--black);
+    display: inline-block;
+    margin-left: 2%;
+    transform: translateY(-10px);
+}
+
+.intro-banner .site-title h1{
+    font-size: 4rem;
+    padding-left: 0;
+}
+
+.intro-banner .site-title h4{
+    font-size: 1.2rem;
+}
+
+.intro-banner .banner-image>img{
+    padding: 2rem 0;
+    width:100%;
+}
+/*------------------About Section design------------------*/
+
+.about{
+    padding: 4rem 0 2rem 0;
+}
+
+.about .details{
+    padding: 0 10% 0 13%;
+    width: 100%;
+}
+
+.about h1{
+    padding: 1rem 0;
+    color: blueviolet;
+}
+
+.about h1 ::after{
+    content: "";
+    width: 5vw;
+    height:2px;
+    padding: 1rem 0;
+    margin-left: 2%;
+    background-color: blueviolet;
+    display: block;
+}
+
+.about button{
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+/*-------------------------------------Skills Section design----------------------*/
+.skillsdept{
+    position: relative;
+    text-transform: uppercase;
+    padding:5% 20%;
+    letter-spacing: 2px; 
+}
+
+.skillsdept h1{
+    position: relative;
+    text-align: center;
+    color: rgb(223, 205, 255);
+    padding-bottom: 2rem;
+}
+.skillsdept h1::after{
+    content: '';
+    width:6vw;
+    height: 2px;
+    background-color: var(--black);
+    opacity: 0.5;
+    display: block;
+    margin-left: 45%;
+}
+
+.skillsdept h4{
+   padding-left:1rem;
+   padding-bottom: 1rem;
+}
+
+
+.skillsdept .technology{
+    display: flex;
+    flex-direction: column;
+}
+
+.skillsdept .technology li{
+    position: relative;
+    list-style: none;
+}
+ .skillsdept progress{
+     display: block;
+     width: 50%;
+ }
+   
+ /*---------------------------------------Contact section------------------------*/
+ .contact
+ { 
+     min-height: 100vh;
+     padding: 50px 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background: url("https://image.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg") no-repeat;
+     background-size: cover;
+ }
+
+ .contact .content{
+     max-width: 800px;
+     text-align: center;
+ }
+
+ .contact .content h2{
+     font-size: 36px;
+     font-weight: 400;
+     color: blueviolet;
+ }
+
+ .contact .content p{  
+     font-weight: 400;
+     color: blue;
+ }
+
+ .bigbox{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 30px;
+ }
+ .bigbox .contactInfo{
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .bigbox .contactInfo .box{
+     display: flex;
+     padding:20px 0;
+ }
+
+ .contactInfo .box .icon
+ {
+     min-width:60px;
+     height: 60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 40px;
+     padding-bottom: 10px;
+ }
+
+ .contactInfo .box .text{
+     display: flex;
+     flex-direction: column;
+     margin-left: 10px;
+     font-weight: 200;
+ }
+
+ .box .text h3{
+     color: rgb(7, 126, 126);
+ }
+ 
+ .contactForm{
+     width: 40%;
+     padding: 40px;
+     background-color: antiquewhite;
+ }
+
+.contactForm .inputBox{
+margin-top: 10px;
+width:100%;
+}
+
+.inputBox input,
+.inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid var(--black);
+    resize:none;
+    margin:10px 0;
+    outline: none;
+}
+ 
+.inputBox span{
+     font-size: 16px;
+ }
+
+.inputBox button{
+    background-color: rgb(58, 55, 55);
+    color: orange;
+    border: 1px solid rgb(5, 255, 5);
+    padding:1px 10px;
+    border-radius: 10%;
+}
+.inputBox button:hover{
+  box-shadow: 0 5px 5px rgb(163, 241, 46);
+}
+
+@media (max-width:990px)
+{
+    .contact{
+        padding:50px;
+    }
+    .bigbox{
+        flex-direction: column;
+    }
+}
+/*---------------------------------------Footer Section styling-----------------------*/
+footer{
+    width:100%;
+    height:6rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: grey;
+    background-color: var(--black);
+    opacity: 0.7;
+}
